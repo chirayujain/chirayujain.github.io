@@ -4,15 +4,32 @@ html {
 }
 
 .title-name {
-	margin-top: 100px;
+	margin-top: 0px;
+	margin-right: 0px;
 	font-size: 80px;
 
 }
 
+.background {
+	background: url(http://smeester.com/wp-content/uploads/Engineer-Background.gif);
+	height: 100%;
+	  z-index: -1;
+  overflow: hidden;
+}
+
 .intro {
+	margin-top: 1000px;
+	width: 100%;
 	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
 }
 
 .quote {
 	margin-top: 20px;
+}
+
+.about-container {
+	background-color: #444;
 }
