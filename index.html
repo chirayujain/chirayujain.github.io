@@ -1,20 +1,19 @@
 <!DOCTYPE HTML>
 <!--
-	Twenty by HTML5 UP
+	Prologue by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Twenty by HTML5 UP</title>
+		<title>Prologue by HTML5 UP</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
@@ -22,256 +21,210 @@
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
 		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<body class="index">
-	
-		<!-- Header -->
-			<header id="header" class="alt">
-				<h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1>
-				<nav id="nav">
-					<ul>
-						<li class="current"><a href="index.html">Welcome</a></li>
-						<li class="submenu">
-							<a href="">Layouts</a>
-							<ul>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li class="submenu">
-									<a href="">Submenu</a>
-									<ul>
-										<li><a href="#">Dolore Sed</a></li>
-										<li><a href="#">Consequat</a></li>
-										<li><a href="#">Lorem Magna</a></li>
-										<li><a href="#">Sed Magna</a></li>
-										<li><a href="#">Ipsum Nisl</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li><a href="#" class="button special">Sign Up</a></li>
-					</ul>
-				</nav>
-			</header>
+	<body>
 
-		<!-- Banner -->		
-			<section id="banner">
-				
-				<!--
-					".inner" is set up as an inline-block so it automatically expands
-					in both directions to fit whatever's inside it. This means it won't
-					automatically wrap lines, so be sure to use line breaks where
-					appropriate (<br />).
-				-->
-				<div class="inner">
-					
-					<header>
-						<h2>TWENTY</h2>
-					</header>
-					<p>This is <strong>Twenty</strong>, a free
-					<br />
-					responsive template
-					<br />
-					by <a href="http://html5up.net">HTML5 UP</a>.</p>
-					<footer>
-						<ul class="buttons vertical">
-							<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
-						</ul>
-					</footer>
-				
+		<!-- Header -->
+			<div id="header" class="skel-layers-fixed">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Jane Doe</h1>
+							<p>Hyperspace Engineer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+							
+								Prologue's nav expects links in one of two formats:
+								
+								1. Hash link (scrolls to a different section within the page)
+								
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+							
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+						
 				</div>
 				
-			</section>
-		
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+				
+				</div>
+			
+			</div>
+
 		<!-- Main -->
-			<article id="main">
+			<div id="main">
 
-				<header class="special container">
-					<span class="icon fa-bar-chart-o"></span>
-					<h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP
-					<br />
-					I decided to give it a really creative name.</h2>
-					<p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
-					<br />
-					it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
-					and, like all my stuff,
-					<br />
-					released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
-				</header>
-					
-				<!-- One -->
-					<section class="wrapper style2 container special-alt">
-						<div class="row 50%">
-							<div class="8u 12u(2)">
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
+								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
+								<p>Ligula scelerisque justo sem accumsan diam quis<br />
+								vitae natoque dictum sollicitudin elementum.</p>
+							</header>
 							
-								<header>
-									<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
-								</header>
-								<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-								<footer>
-									<ul class="buttons">
-										<li><a href="#" class="button">Find Out More</a></li>
-									</ul>
-								</footer>
-							
-							</div>
-							<div class="4u 12u(2) important(2)">
-							
-								<ul class="featured-icons">
-									<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-									<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-									<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-									<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-									<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-									<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-								</ul>
-							
-							</div>				
+							<footer>
+								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+							</footer>
+
 						</div>
 					</section>
 					
-				<!-- Two -->
-					<section class="wrapper style1 container special">
-						<div class="row">
-							<div class="4u 12u(2)">
-							
-								<section>
-									<span class="icon featured fa-check"></span>
-									<header>
-										<h3>This is Something</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-								</section>
-							
-							</div>
-							<div class="4u 12u(2)">
-							
-								<section>
-									<span class="icon featured fa-check"></span>
-									<header>
-										<h3>Also Something</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-								</section>
-							
-							</div>
-							<div class="4u 12u(2)">
-							
-								<section>
-									<span class="icon featured fa-check"></span>
-									<header>
-										<h3>Probably Something</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-								</section>
-							
-							</div>
-						</div>
-					</section>
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
 					
-				<!-- Three -->
-					<section class="wrapper style3 container special">
-					
-						<header class="major">
-							<h2>Next look at this <strong>cool stuff</strong></h2>
-						</header>
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+							
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis 
+							fusce hendrerit lacus ridiculus.</p>
 						
-						<div class="row">
-							<div class="6u 12u(2)">
-							
-								<section>
-									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-									<header>
-										<h3>A Really Fast Train</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-								</section>
-
+							<div class="row">
+								<div class="4u">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>Ipsum Feugiat</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>Rhoncus Semper</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>Magna Nullam</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<header>
+											<h3>Natoque Vitae</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<header>
+											<h3>Dolor Penatibus</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Orci Convallis</h3>
+										</header>
+									</article>
+								</div>
 							</div>
-							<div class="6u 12u(2)">
-							
-								<section>
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<header>
-										<h3>An Airport Terminal</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-								</section>
 
-							</div>
 						</div>
-						<div class="row">
-							<div class="6u 12u(2)">
-							
-								<section>
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<header>
-										<h3>Hyperspace Travel</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-								</section>
-
-							</div>
-							<div class="6u 12u(2)">
-							
-								<section>
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<header>
-										<h3>And Another Train</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-								</section>
-
-							</div>
-						</div>
-
-						<footer class="major">
-							<ul class="buttons">
-								<li><a href="#" class="button">See More</a></li>
-							</ul>
-						</footer>
-					
 					</section>
-					
-			</article>
 
-		<!-- CTA -->
-			<section id="cta">
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus 
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae 
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem 
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper 
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec 
+							ornare iaculis.</p>
+
+						</div>
+					</section>
 			
-				<header>
-					<h2>Ready to do <strong>something</strong>?</h2>
-					<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
-				</header>
-				<footer>
-					<ul class="buttons">
-						<li><a href="#" class="button special">Take My Money</a></li>
-						<li><a href="#" class="button">LOL Wut</a></li>
-					</ul>
-				</footer>
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Elementum sem parturient nulla quam placerat viverra 
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia 
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc 
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							
+							<form method="post" action="#">
+								<div class="row 50%">
+									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
+								</div>
+								<div class="row 50%">
+									<div class="12u">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
 			
-			</section>
+			</div>
 
 		<!-- Footer -->
-			<footer id="footer">
-			
-				<ul class="icons">
-					<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-					<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-					<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-				</ul>
+			<div id="footer">
 				
-				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			
-			</footer>
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				
+			</div>
 
 	</body>
 </html>

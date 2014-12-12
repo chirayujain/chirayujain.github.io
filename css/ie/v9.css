@@ -1,11 +1,19 @@
 /*
-	Twenty by HTML5 UP
+	Prologue by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Banner */
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
 
-	#banner .inner {
-		opacity: 1.0;
-	}
+	/* Button */
+		
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"],
+		.button
+		{
+			background-image: url('images/grad0-15.svg');
+		}

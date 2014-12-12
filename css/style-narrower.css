@@ -1,121 +1,179 @@
 /*
-	Twenty by HTML5 UP
+	Prologue by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Basic */
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
 
-	header.major {
-		padding-bottom: 0.25em;
+	body,input,textarea,select
+	{
+		font-size: 16pt;
 	}
 
-	header.special {
-		margin-bottom: 4em;
-		padding-top: 5em;
+	header
+	{
 	}
 
-		header.special:before, header.special:after {
-			width: 40%;
+		header br
+		{
+			display: none;
 		}
 
-		header.special h2 + p {
-			padding-top: 1.25em;
-		}
-
-/* Section/Article */
-
-	section {
-		margin: 1em 0 1em 0;
+	.container
+	{
+		padding: 0 2em 0 2em;
 	}
 
-		section:first-child {
-			margin-top: 0;
+	/* Item */
+	
+		.item
+		{
+			margin-bottom: 15px;
 		}
 
-/* Button */
+	/* List */
 
-	input[type="button"].small,
-	input[type="submit"].small,
-	input[type="reset"].small,
-	.button.small {
-		font-size: 0.8em;
-		min-width: 18em;
-		padding: 0.75em 0;
-	}
-
-/* List */
-
-	ul.featured-icons {
-		margin: 0;
-	}
-
-		ul.featured-icons li {
-			display: inline-block;
-			float: none;
-			width: auto;
+		ul
+		{
 		}
 
-			ul.featured-icons li .icon {
-				font-size: 4em;
-				width: 1.25em;
+			ul.icons
+			{
+			}	
+			
+				ul.icons li
+				{
+				}
+				
+					ul.icons a
+					{
+						width: 1.75em;
+						font-size: 1.25em;
+					}
+					
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		width: 100%;
+		background: none !important;
+		box-shadow: none !important;
+	}
+	
+		#header .top
+		{
+			position: relative;
+		}
+	
+		#header .bottom
+		{
+			border-top: solid 1px rgba(255,255,255,0.05);
+			box-shadow: 0 -1px 0 0 rgba(0,0,0,0.15);
+			padding-top: 2em;
+			margin-top: 1em;
+			position: relative;
+		}
+
+	#logo
+	{
+		margin: 1.5em 1.25em 1.25em 1.25em;
+	}
+
+	#nav
+	{
+	}
+	
+		#nav ul
+		{
+		}
+		
+			#nav ul li
+			{
 			}
+			
+				#nav ul li a
+				{
+					padding: 0.5em 1.25em 0.5em 1.25em;
+				}
 
-	ul.buttons li {
-		display: block;
-		padding: 1em 0 0 0;
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer
+	{
+		margin-left: 0;
 	}
 
-/* Header */
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
 
-	#header {
-		display: none;
+	#main
+	{
+		margin-left: 0;
 	}
 
-/* Banner */
-
-	#banner {
-		margin: 0;
-	}
-
-/* Wrapper */
-
-	.wrapper.special-alt {
-		text-align: center;
-	}
-
-	.wrapper.style4 {
-		padding-bottom: 3em;
-	}
-
-/* Main */
-
-	#main {
-		padding: 5em 0;
-	}
-
-		#main .sidebar {
-			border-top: solid 1px rgba(124, 128, 129, 0.1);
-			padding-top: 3em;
+		#main > section
+		{
+			padding: 3em 0;
 		}
 
-			#main .sidebar section {
-				border-top: 0;
-				padding-top: 0;
+		#main section.cover
+		{
+			padding: 4em 0;
+		}
+	
+/*********************************************************************************/
+/* Side Panel                                                                    */
+/*********************************************************************************/
+
+	#sidePanel
+	{
+		background: #222729 url('images/overlay.png');
+		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
+	}
+
+	#sidePanelToggle
+	{
+	}
+	
+		#sidePanelToggle .toggle
+		{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+		
+			#sidePanelToggle .toggle:before
+			{
+				font-family: FontAwesome;
+				text-decoration: none;
+				font-style: normal;
+				font-weight: normal;
+				-webkit-font-smoothing:antialiased;
+				-moz-osx-font-smoothing:grayscale;
+
+				content: '\f0c9';
+				color: #fff;
+				font-size: 18px;
+				line-height: 2.25em;
+				background: rgba(128,136,144,0.5);
+				border-radius: 0.35em;
+				text-align: center;
+				position: absolute;
+				left: 0.5em;
+				top: 0.5em;
+				display: block;
+				width: 3.25em;
+				height: 2.25em;
+				line-height: 2.25em;
 			}
-
-	body.index #main {
-		padding-top: 4.5em;
-	}
-
-/* CTA */
-
-	#cta {
-		margin: 0;
-	}
-
-/* Footer */
-
-	#footer {
-		padding: 4em 1.5em;
-	}
