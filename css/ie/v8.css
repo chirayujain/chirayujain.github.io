@@ -1,110 +1,61 @@
 /*
-	Prologue by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*********************************************************************************/
-/* Basic                                                                         */
-/*********************************************************************************/
+/* Basic */
 
-	/* Section/Article */
-
-		section,
-		article
-		{
-		}
-		
-			section > .last-child,
-			article > .last-child
-			{
-				margin-bottom: 0;
-			}
-
-			section.last-child,
-			article.last-child
-			{
-				margin-bottom: 0;
-			}
-
-	/* Form */
-
-		form
-		{
-		}
-		
-			form input[type="text"],
-			form input[type="email"],
-			form input[type="password"],
-			form select,
-			form textarea
-			{
-				-ms-behavior: url('css/ie/PIE.htc');
-			}
-			
-	/* Button */
-		
-		input[type="button"],
-		input[type="submit"],
-		input[type="reset"],
-		.button
-		{
-			-ms-behavior: url('css/ie/PIE.htc');
-		}
-
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
-
-	#nav
-	{
-	}
-	
-		#nav ul
-		{
-		}
-		
-			#nav ul li
-			{
-			}
-			
-				#nav ul li a
-				{
-					color: #888;
-				}
-
-					#nav ul li a.active
-					{
-						background: #1C2022;
-					}
-
-/*********************************************************************************/
-/* Main                                                                          */
-/*********************************************************************************/
-
-	#main
-	{
+	code,
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea,
+	.box,
+	.image,
+	.image img,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		position: relative;
+		-ms-behavior: url("css/ie/PIE.htc");
 	}
 
-		#main > section
-		{
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		line-height: 2.75em;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		-moz-appearance: normal;
+		-webkit-appearance: normal;
+		-o-appearance: normal;
+		-ms-appearance: normal;
+		appearance: normal;
+	}
+
+		input[type="checkbox"] + label,
+		input[type="radio"] + label {
+			padding: 0 0 0 1.5em;
 		}
-		
-			#main > section.cover
-			{
-				background-position: auto;
-				-ms-behavior: url('css/ie/backgroundsize.min.htc');
+
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				display: none;
 			}
 
-/*********************************************************************************/
-/* Side Panel                                                                    */
-/*********************************************************************************/
+/* Button */
 
-	#sidePanelToggle
-	{
+	input[type="submit"].alt,
+	input[type="reset"].alt,
+	input[type="button"].alt,
+	.button.alt {
+		border: solid 2px #e4e4e4;
 	}
-	
-		#sidePanelToggle .toggle
-		{
-			background-color: #888;
-		}

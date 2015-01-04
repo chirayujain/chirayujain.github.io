@@ -1,42 +1,44 @@
 /*
-	Prologue by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
 (function($) {
 
 	skel.init({
 		reset: 'full',
 		breakpoints: {
-			'global':	{ range: '*', href: 'css/style.css', containers: 1400, grid: { gutters: 40 }, viewport: { scalable: false } },
-			'wide':		{ range: '961-1880', href: 'css/style-wide.css', containers: 1200, grid: { gutters: 40 } },
-			'normal':	{ range: '961-1620', href: 'css/style-normal.css', containers: 960, grid: { gutters: 40 } },
-			'narrow':	{ range: '961-1320', href: 'css/style-narrow.css', containers: '100%', grid: { gutters: 20 } },
-			'narrower':	{ range: '-960', href: 'css/style-narrower.css', containers: '100%', grid: { gutters: 20 } },
-			'mobile':	{ range: '-736', href: 'css/style-mobile.css', containers: '100%!', grid: { collapse: true } }
+			global: { href: 'css/style.css', containers: '45em', grid: { gutters: ['2em', 0] } },
+			xlarge: { media: '(max-width: 1680px)', href: 'css/style-xlarge.css' },
+			large: { media: '(max-width: 1280px)', href: 'css/style-large.css', containers: '42em', grid: { gutters: ['1.5em', 0] }, viewport: { scalable: false } },
+			medium: { media: '(max-width: 1024px)', href: 'css/style-medium.css', containers: '85%!', grid: { zoom: 2 } },
+			small: { media: '(max-width: 736px)', href: 'css/style-small.css', containers: '90%!', grid: { gutters: ['1.25em', 0] } },
+			xsmall: { media: '(max-width: 480px)', href: 'css/style-xsmall.css', grid: { zoom: 3 } }
 		},
 		plugins: {
 			layers: {
-				sidePanel: {
-					hidden: true,
-					breakpoints: 'narrower',
-					position: 'top-left',
-					side: 'left',
-					animation: 'pushX',
-					width: 240,
-					height: '100%',
-					clickToHide: true,
-					html: '<div data-action="moveElement" data-args="header"></div>',
-					orientation: 'vertical'
+				config: {
+					mode: 'transform'
 				},
-				sidePanelToggle: {
-					breakpoints: 'narrower',
+				titleBar: {
+					breakpoints: 'medium',
+					width: '100%',
+					height: 44,
 					position: 'top-left',
 					side: 'top',
-					height: '4em',
-					width: '5em',
-					html: '<div data-action="toggleLayer" data-args="sidePanel" class="toggle"></div>'
+					html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel"></span><span class="title" data-action="copyText" data-args="logo"></span>'
+				},
+				sidePanel: {
+					breakpoints: 'medium',
+					hidden: true,
+					width: { small: 275, medium: '20em' },
+					height: '100%',
+					animation: 'pushX',
+					position: 'top-right',
+					side: 'right',
+					orientation: 'vertical',
+					clickToHide: true,
+					html: '<div data-action="moveElement" data-args="header"></div>'
 				}
 			}
 		}
@@ -44,19 +46,10 @@
 
 	$(function() {
 
-		var	$window = $(window),
-			$body = $('body');
-			
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-			
-			$window.on('load', function() {
-				$body.removeClass('is-loading');
-			});
-			
-		// CSS polyfills (IE<9).
-			if (skel.vars.IEVersion < 9)
-				$(':last-child').addClass('last-child');
+		var $body = $('body'),
+			$header = $('#header'),
+			$nav = $('#nav'), $nav_a = $nav.find('a'),
+			$wrapper = $('#wrapper');
 
 		// Forms (IE<10).
 			var $form = $('form');
@@ -75,50 +68,52 @@
 
 			}
 
-		// Scrolly links.
-			$('.scrolly').scrolly();
+		// Header.
+			var ids = [];
 
-		// Nav.
-			var $nav_a = $('#nav a');
-			
-			// Scrolly-fy links.
+			// Set up nav items.
 				$nav_a
 					.scrolly()
-					.on('click', function(e) {
+					.on('click', function(event) {
 
-						var t = $(this),
-							href = t.attr('href');
-						
-						if (href[0] != '#')
-							return;
-						
-						e.preventDefault();
-						
-						// Clear active and lock scrollzer until scrolling has stopped
+						var $this = $(this),
+							href = $this.attr('href');
+
+						// Not an internal link? Bail.
+							if (href.charAt(0) != '#')
+								return;
+
+						// Prevent default behavior.
+							event.preventDefault();
+
+						// Remove active class from all links and mark them as locked (so scrollzer leaves them alone).
 							$nav_a
 								.removeClass('active')
 								.addClass('scrollzer-locked');
-					
-						// Set this link to active
-							t.addClass('active');
-					
+
+						// Set active class on this link.
+							$this.addClass('active');
+
+					})
+					.each(function() {
+
+						var $this = $(this),
+							href = $this.attr('href'),
+							id;
+
+						// Not an internal link? Bail.
+							if (href.charAt(0) != '#')
+								return;
+
+						// Add to scrollzer ID list.
+							id = href.substring(1);
+							$this.attr('id', id + '-link');
+							ids.push(id);
+
 					});
 
 			// Initialize scrollzer.
-				var ids = [];
-				
-				$nav_a.each(function() {
-					
-					var href = $(this).attr('href');
-					
-					if (href[0] != '#')
-						return;
-				
-					ids.push(href.substring(1));
-				
-				});
-				
-				$.scrollzer(ids, { pad: 200, lastHack: true });
+				$.scrollzer(ids, { pad: 300, lastHack: true });
 
 	});
 
