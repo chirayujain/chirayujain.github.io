@@ -1623,7 +1623,7 @@
 	}
 
 	body {
-		background: #bdc3c7;
+		background: #ecf0f1;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -3193,7 +3193,7 @@
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: #7f8c8d;
+		background-color: #ecf0f1;
 	}
 
 		#footer > .inner {
