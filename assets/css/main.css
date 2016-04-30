@@ -7,7 +7,9 @@
 */
 
 /* Reset */
+
 .quotes {display: none;}
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -1721,10 +1723,10 @@
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #2C3E50, #b74e91);
+				background-image: -webkit-linear-gradient(to right, #2C3E50, #b74e91);
+				background-image: -ms-linear-gradient(to right, #2C3E50, #b74e91);
+				background-image: linear-gradient(to right, #2C3E50, #b74e91);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -2563,7 +2565,7 @@
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
+					color: #2C3E50;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
@@ -3253,7 +3255,7 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #2C3E50;
 		}
 
 		.wrapper.style1-alt {
@@ -3380,7 +3382,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #2C3E50;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3775,10 +3777,10 @@
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #2C3E50, #b74e91);
+				background-image: -webkit-linear-gradient(to right, #2C3E50, #b74e91);
+				background-image: -ms-linear-gradient(to right, #2C3E50, #b74e91);
+				background-image: linear-gradient(to right, #2C3E50, #b74e91);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
