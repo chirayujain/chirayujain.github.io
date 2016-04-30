@@ -3510,7 +3510,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#sidebar + #wrapper + #footer {
-				margin-left: 0;
+				margin-right: 0;
 			}
 
 		}
@@ -3525,7 +3525,7 @@
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.9);
+		color: rgba(255, 255, 255, 0.5);
 	}
 
 	#header + #wrapper + #footer > .inner {
