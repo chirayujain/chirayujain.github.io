@@ -11,9 +11,9 @@
     function showNextQuote() {
         ++quoteIndex;
         quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(2000)
-            .delay(2000)
-            .fadeOut(2000, showNextQuote);
+            .fadeIn(1500)
+            .delay(1500)
+            .fadeOut(1500, showNextQuote);
     }
     
     showNextQuote();
