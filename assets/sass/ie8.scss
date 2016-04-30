@@ -4,19 +4,15 @@
 @import 'libs/skel';
 
 /*
-	Phantom by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Form */
+/* Type */
 
-	form {
-		.field {
-			float: none !important;
-			width: 100% !important;
-			padding-left: 0 !important;
-		}
+	body, input, select, textarea {
+		color: _palette(fg-bold);
 	}
 
 /* Button */
@@ -26,67 +22,38 @@
 	input[type="button"],
 	button,
 	.button {
-		border: solid 2px _palette(fg) !important;
+		position: relative;
 
-		&:hover {
-			border-color: _palette(accent1) !important;
-		}
-
-		&.special {
-			border: none !important;
+		&:after {
+			display: none;
 		}
 	}
 
-/* Tiles */
+/* Features */
 
-	.tiles {
-		article {
-			> .image {
-				&:before, &:after {
-					display: none;
-				}
-			}
-		}
+	.features {
+		border: solid 1px;
 	}
 
-/* Header */
+/* Form */
 
-	#header {
-		.logo {
-			.symbol {
-				display: none;
-			}
-		}
-
-		nav {
-			ul {
-				li {
-					a[href="#menu"] {
-						text-indent: 0;
-						width: auto;
-						font-size: 0.8em;
-
-						&:before, &:after {
-							display: none;
-						}
-					}
-				}
-			}
-		}
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea {
+		background: transparent;
+		border: solid 1px;
 	}
 
-/* Footer */
+/* Split */
 
-	#footer {
-		> .inner {
-			section {
-				width: 50%;
-				margin-left: 3em;
-
-				&:first-child {
-					margin-left: 0;
-					width: 40%;
-				}
+	.split {
+		&.style1 {
+			> :first-child {
+				padding-right: 2em;
+				width: 70%;
 			}
 		}
 	}

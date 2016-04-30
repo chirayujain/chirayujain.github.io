@@ -1,40 +1,88 @@
 /*
-	Phantom by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Tiles */
+/* Type */
 
-	.tiles:after {
+	h1.major:after {
+		background: #b74e91;
+	}
+
+/* Wrapper */
+
+	.wrapper.fullscreen {
+		min-height: 0;
+		padding-bottom: 6em;
+		padding-top: 6em;
+	}
+
+		body.is-ie .wrapper.fullscreen {
+			height: auto;
+		}
+
+/* Spotlights */
+
+	.spotlights > section {
+		padding-left: 20em;
+		position: relative;
+	}
+
+		.spotlights > section > .image {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 20em;
+		}
+
+		.spotlights > section > .content {
+			width: 100%;
+		}
+
+/* Features */
+
+	.features:after {
+		clear: both;
 		content: '';
 		display: block;
-		clear: both;
 	}
 
-	.tiles article {
+	.features section {
 		float: left;
 	}
 
-		.tiles article > a {
-			padding-top: 50%;
-			margin-top: -1.75em;
-		}
+/* Split */
 
-		body:not(.is-touch) .tiles article:hover > .image {
-			-moz-transform: none;
-			-webkit-transform: none;
-			-ms-transform: none;
-			transform: none;
-		}
+	.split:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
 
-/* Footer */
-
-	#footer > .inner section {
+	.split > * {
 		float: left;
 	}
 
-	#footer > .inner .copyright {
+/* Sidebar */
+
+	#sidebar nav a:after {
+		background-color: #b74e91;
+	}
+
+/* Header */
+
+	#header:after {
 		clear: both;
-		padding-top: 4em;
+		content: '';
+		display: block;
+	}
+
+	#header > .title {
+		float: left;
+	}
+
+	#header > nav {
+		float: right;
 	}

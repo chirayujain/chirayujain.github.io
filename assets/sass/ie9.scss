@@ -4,49 +4,110 @@
 @import 'libs/skel';
 
 /*
-	Phantom by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Tiles */
+/* Type */
 
-	.tiles {
-		&:after {
-			content: '';
-			display: block;
-			clear: both;
+	h1 {
+		&.major {
+			&:after {
+				background: _palette(accent3);
+			}
 		}
+	}
 
-		article {
-			float: left;
+/* Wrapper */
 
-			> a {
-				padding-top: 50%;
-				margin-top: -1.75em;
+	.wrapper {
+		&.fullscreen {
+			min-height: 0;
+			padding-bottom: 6em;
+			padding-top: 6em;
+
+			body.is-ie & {
+				height: auto;
+			}
+		}
+	}
+
+/* Spotlights */
+
+	.spotlights {
+		> section {
+			padding-left: 20em;
+			position: relative;
+
+			> .image {
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 20em;
 			}
 
-			body:not(.is-touch) & {
-				&:hover {
-					> .image {
-						@include vendor('transform', 'none');
-					}
+			> .content {
+				width: 100%;
+			}
+		}
+	}
+
+/* Features */
+
+	.features {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		section {
+			float: left;
+		}
+	}
+
+/* Split */
+
+	.split {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		> * {
+			float: left;
+		}
+	}
+
+/* Sidebar */
+
+	#sidebar {
+		nav {
+			a {
+				&:after {
+					background-color: _palette(accent3);
 				}
 			}
 		}
 	}
 
-/* Footer */
+/* Header */
 
-	#footer {
-		> .inner {
-			section {
-				float: left;
-			}
+	#header {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
 
-			.copyright {
-				clear: both;
-				padding-top: (_size(element-margin) * 2);
-			}
+		> .title {
+			float: left;
+		}
+
+		> nav {
+			float: right;
 		}
 	}
