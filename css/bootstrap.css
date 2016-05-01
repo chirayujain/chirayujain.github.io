@@ -68,7 +68,7 @@ h1, p {
     transition:         transform .35s ease-out;
 }
 
-.caption:hover .caption__overlay {
+.caption:active .caption__overlay {
     -webkit-transform: translateY(0);
             transform: translateY(0);
 }
@@ -81,7 +81,7 @@ h1, p {
     transition:         transform .35s ease-out;
 }
 
-.caption:hover .caption__overlay__title {
+.caption:active .caption__overlay__title {
     -webkit-transform: translateY(0);
             transform: translateY(0);
 }
