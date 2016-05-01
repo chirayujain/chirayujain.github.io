@@ -4,6 +4,22 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+div.texthover {
+    display: none;
+    position: relative;
+    text-align: center;
+    top: -200px;
+}
+
+div.texthover:hover, a.wrapper:hover + div {
+    display: block;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
