@@ -3,16 +3,15 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
- span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
+div.texthover {
+    display: none;
+    position: relative;
+    text-align: center;
+    top: -170px;
+}
+
+div.texthover:hover, a.wrapper:hover + div {
+    display: block;
 }
 
 span.text-content span {
