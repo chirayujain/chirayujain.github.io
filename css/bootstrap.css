@@ -68,7 +68,7 @@ h1, p {
     transition:         transform .35s ease-out;
 }
 
-.caption:hover, .info-slide:active, .caption__overlay {
+.caption:hover .caption__overlay {
     -webkit-transform: translateY(0);
             transform: translateY(0);
 }
