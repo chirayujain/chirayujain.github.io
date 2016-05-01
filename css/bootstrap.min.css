@@ -7,7 +7,7 @@ div.texthover {
     display: none;
     position: relative;
     text-align: center;
-    top: -170px;
+    top: -20px;
 }
 
 div.texthover:hover, a.wrapper:hover + div {
