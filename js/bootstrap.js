@@ -1,37 +1,4 @@
-/*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under the MIT license
- */
-// Add no-touch class to body for mobile touch events and toggle hover class on elements that need it
-  if ("ontouchstart" in document.documentElement) {
-    document.documentElement.className += " touch";
-  }
-  
-  // Add and remove no-hover class to <li>'s for mobile hover events
-  jQuery('.touch .container').each(function() {
-    var div = jQuery(this);
-    
-    div.hover(function() {
-      div.removeClass('no-hover');
-    });
-    
-    jQuery('*').not(div).bind('click', function() {
-      div.addClass('no-hover');
-    });
-    
-  });
-if (typeof jQuery === 'undefined') {
-  throw new Error('Bootstrap\'s JavaScript requires jQuery')
-}
 
-+function ($) {
-  'use strict';
-  var version = $.fn.jquery.split(' ')[0].split('.')
-  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 2)) {
-    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 3')
-  }
-}(jQuery);
 
 /* ========================================================================
  * Bootstrap: transition.js v3.3.6
