@@ -1194,7 +1194,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #FFFFFF;
   text-decoration: none;
 }
 a:hover,
@@ -3500,7 +3500,7 @@ fieldset[disabled] .btn-danger.focus {
 }
 .btn-link {
   font-weight: normal;
-  color: #FFFFFF;
+  color: #337AB7;
   border-radius: 0;
 }
 .btn-link,
