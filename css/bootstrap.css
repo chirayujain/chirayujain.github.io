@@ -1193,6 +1193,16 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
+
+
+
+
+
+
+
+
+
+
 g {
   color: #393939;
   text-decoration: none;
@@ -1207,6 +1217,20 @@ g:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+
+g.label:hover,
+g.label:focus {
+  color: #c0392b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
 a {
   color: #FFFFFF;
   text-decoration: none;
