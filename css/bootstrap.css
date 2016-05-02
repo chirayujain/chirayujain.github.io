@@ -1193,6 +1193,10 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
+b {
+  color: #393939;
+  text-decoration: none;
+}
 a {
   color: #FFFFFF;
   text-decoration: none;
