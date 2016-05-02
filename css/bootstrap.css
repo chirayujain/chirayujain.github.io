@@ -16,7 +16,6 @@ h1, p {
 .container {
     margin: 0 auto;
     max-width: 1280px;
-    background-color: #393939;
 }
 
 /*
@@ -1685,6 +1684,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color: #393939;
 }
 @media (min-width: 768px) {
   .container {
@@ -1706,6 +1706,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color: #393939;
 }
 .row {
   margin-right: -15px;
