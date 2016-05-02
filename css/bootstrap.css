@@ -1193,16 +1193,16 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-b {
+g {
   color: #393939;
   text-decoration: none;
 }
-b:hover,
-b:focus {
+g:hover,
+g:focus {
   color: #23527c;
   text-decoration: underline;
 }
-b:focus {
+g:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
