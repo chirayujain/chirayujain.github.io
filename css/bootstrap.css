@@ -1197,6 +1197,16 @@ b {
   color: #393939;
   text-decoration: none;
 }
+b:hover,
+b:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+b:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
 a {
   color: #FFFFFF;
   text-decoration: none;
