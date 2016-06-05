@@ -5,7 +5,11 @@ sup {
   font-size: 30px;
 }
 #background {
-  background: url(../background.jpg) no-repeat center center scroll;
+  background: url(../background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center, center;
   position: absolute;
