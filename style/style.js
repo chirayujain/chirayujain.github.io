@@ -2,7 +2,7 @@
 
     var quotes = $(".quotes");
     var quoteIndex = -1;
-    
+
     function showNextQuote() {
         ++quoteIndex;
         quotes.eq(quoteIndex % quotes.length)
@@ -10,7 +10,7 @@
             .delay(750)
             .fadeOut(750, showNextQuote);
     }
-    
+
     showNextQuote();
-    
+
 })();
