@@ -11,17 +11,7 @@ body {
 sup {
   font-size: 30px;
 }
-#background {
-  background: url(../background.jpg) no-repeat center center scroll;
-  background-repeat: no-repeat;
-  background-position: center, center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: -1337;
-}
+
 .quotes {display: none;}
 .outlet {
   position: absolute;
