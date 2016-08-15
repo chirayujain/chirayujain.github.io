@@ -9,6 +9,9 @@
     bottom: 0px;
     right: 0px;
 }
+.myButton {
+    width: 150px;
+}
 
 body {
     font: normal 16px/1.5 Arial, sans-serif;
