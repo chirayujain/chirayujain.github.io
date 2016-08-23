@@ -6,8 +6,8 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 #fixedbutton {
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    bottom: 10%;
+    right: 10%;
 }
 .myButton {
     width: 10%;
