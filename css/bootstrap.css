@@ -6,11 +6,11 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 #fixedbutton {
     position: fixed;
-    bottom: 10%;
-    right: 10%;
+    bottom: 5%;
+    right: 15%;
 }
 .myButton {
-    width: 10%;
+    width: 150px;
 }
 
 body {
