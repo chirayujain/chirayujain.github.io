@@ -4,9 +4,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 #fixedbutton {
-    position: inherit;
-    bottom: 5%;
-    right: 15%;
+    position: fixed;;
+    bottom: 70px;
+    right: 100px;
 }
 .myButton {
     width: 150px;
