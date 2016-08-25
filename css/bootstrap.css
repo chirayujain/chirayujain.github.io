@@ -5,8 +5,8 @@
  */
 #fixedbutton {
     position: fixed;;
-    bottom: 70px;
-    right: 100px;
+    bottom: 0px;
+    right: 0px;
 }
 .myButton {
     width: 150px;
