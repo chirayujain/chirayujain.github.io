@@ -21,7 +21,7 @@ html  {
 .subtext {
   position: relative;
   top: 7%;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Lato';
   color: #ffffff;
   font-size: 24px;
   font-weight: lighter;
@@ -31,7 +31,7 @@ html  {
 .title {
   position: relative;
   top: 45px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Mono';
   font-size: 52px;
   color: #ffffff;
   text-align: center;
@@ -45,7 +45,7 @@ html  {
   border-radius: 3px;
   border: 3px solid #253167;
   padding: 20px;
-  font-family: 'Ubuntu Condensed', sans-serif;
+  font-family: 'Space Mono';
   font-size: 20px ;
   color: black;
   text-align: center;
