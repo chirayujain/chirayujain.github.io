@@ -35,13 +35,13 @@ img {
 
 p.name {
   font-family: 'Lato';
-  font-size: 24px;
+  font-size: 28px;
   margin: 0px;
 }
 
 p.content {
   font-family: 'Lato';
-  font-size: 16px;
+  font-size: 20px;
   margin: 0px;
 }
 
@@ -77,12 +77,12 @@ p.content {
   }
   p.name {
     font-family: 'Lato';
-    font-size: 12px;
+    font-size: 14px;
     margin: 0px;
   }
   p.content {
     font-family: 'Lato';
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
   }
 }
