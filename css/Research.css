@@ -1,6 +1,6 @@
-html  {
+html {
   height: 100%;
-  background-color: #2ecc71;
+  background-color: #2ECC71;
 }
 
 .webpage {
@@ -8,8 +8,9 @@ html  {
   margin: auto;
   display: block;
   margin-top: 5%;
+  margin-bottom: 5%;
   width: 700px;
-  height: 800px;
+  height: 650px;
   color: #ffffff;
   background: rgba(0, 0, 0, .7);
   opacity: 1;
@@ -17,15 +18,31 @@ html  {
   box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
 }
 
+img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  vertical-align: top;
+  margin: 20px 10px 0px 20px;
+  border-radius: 5px;
+}
 
-.subtext {
-  position: relative;
-  top: 7%;
+.projectText {
+  display: inline-block;
+  width: 450px;
+  margin: 20px 0px 0px 0px;
+}
+
+p.name {
   font-family: 'Lato';
-  color: #ffffff;
   font-size: 24px;
-  font-weight: lighter;
-  text-align: center;
+  margin: 0px;
+}
+
+p.content {
+  font-family: 'Lato';
+  font-size: 16px;
+  margin: 0px;
 }
 
 .title {
@@ -37,69 +54,35 @@ html  {
   text-align: center;
 }
 
-.button {
-  position: relative;
-  margin-top: 100px;
-  width: 140px;
-  background: #ffffff;
-  border-radius: 3px;
-  border: 3px solid #253167;
-  padding: 20px;
-  font-family: 'Space Mono';
-  font-size: 20px ;
-  color: black;
-  text-align: center;
-  display: inline-block
-  -webkit-transition-duration: 0.4s; /* Safari */
-      transition-duration: 0.4s;
-}
-.buttonrow{
-
-}
-.button:hover {
-    background-color: #253167;
-    color: white;
-}
-
-
 @media all and (max-width: 900px) {
   .webpage {
-    position: relative;
-    margin: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     width: 350px;
-    height: 400px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    height: 320px;
   }
-
-  .subtext {
-    font-size: 14px;
-  }
-
   .title {
     font-size: 24px;
+    top: 22px;
   }
-
-  .button {
-    font-size: 16px;
-    display: block;
-    top: 40px;
-    margin: auto auto 10px auto;
-    text-align: center;
-    position: relative;
-}
-}
-.webpageProjects {
-  position: relative;
-  margin: auto;
-  display: block;
-  margin-top: 5%;
-  width: 700px;
-  height: 1000px;
-  color: #ffffff;
-  background: rgba(0, 0, 0, .7);
-  opacity: 1;
-  border-radius: 10px;
-  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
+  img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px 5px 0px 10px;
+    border-radius: 2px;
+  }
+  .projectText {
+    width: 225px;
+    margin: 10px 0px 0px 0px;
+  }
+  p.name {
+    font-family: 'Lato';
+    font-size: 12px;
+    margin: 0px;
+  }
+  p.content {
+    font-family: 'Lato';
+    font-size: 8px;
+    margin: 0px;
+  }
 }

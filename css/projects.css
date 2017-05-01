@@ -10,7 +10,7 @@ html {
   margin-top: 5%;
   margin-bottom: 5%;
   width: 700px;
-  height: 1530px;
+  height: 1750px;
   color: #ffffff;
   background: rgba(0, 0, 0, .7);
   opacity: 1;
@@ -58,7 +58,7 @@ p.content {
   .webpage {
     margin-top: 5%;
     width: 350px;
-    height: 760px;
+    height: 870px;
   }
   .title {
     font-size: 24px;
