@@ -17,7 +17,19 @@ html {
   border-radius: 10px;
   box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
 }
+a:link, a:visited {
+    color: white;
+    border-bottom: 1px solid #2ECC71;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 
+a:hover, a:active {
+    background-color: #2ECC71;
+    color: white;
+}
 img {
   display: inline-block;
   width: 200px;
