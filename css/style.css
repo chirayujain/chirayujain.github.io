@@ -156,6 +156,33 @@ a.research:hover, a.research:active {
 }
 
 
+#about.webpage {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 700px;
+  height: 650px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, .7);
+  opacity: 1;
+  border-radius: 10px;
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
+}
+a.about:link, a.about:visited {
+   color: white;
+   border-bottom: 1px solid #e74c3c;
+   padding: 0px 0px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+}
+a.about:hover, a.about:active {
+   background-color: #e74c3c;
+   color: white;
+}
+
 img {
   display: inline-block;
   width: 200px;
