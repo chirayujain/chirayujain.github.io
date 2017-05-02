@@ -10,7 +10,7 @@ html {
   margin-top: 5%;
   margin-bottom: 5%;
   width: 700px;
-  height: 1750px;
+  height: 1765px;
   color: #ffffff;
   background: rgba(0, 0, 0, .7);
   opacity: 1;
@@ -30,6 +30,7 @@ a:hover, a:active {
     background-color: #3498db;
     color: white;
 }
+
 img {
   display: inline-block;
   width: 200px;
@@ -37,11 +38,13 @@ img {
   vertical-align: top;
   margin: 20px 10px 0px 20px;
   border-radius: 5px;
+  border: 1px solid white;
 }
 
 .projectText {
   display: inline-block;
   width: 450px;
+  height: 100px;
   margin: 20px 0px 0px 0px;
 }
 
@@ -72,7 +75,7 @@ p.content {
   .webpage {
     margin-top: 5%;
     width: 350px;
-    height: 870px;
+    height: 882px;
   }
   .title {
     font-size: 24px;
