@@ -135,7 +135,7 @@ a.projects:hover, a.projects:active {
   margin-top: 5%;
   margin-bottom: 5%;
   width: 700px;
-  height: 650px;
+  height: 654px;
   color: #ffffff;
   background: rgba(0, 0, 0, .7);
   opacity: 1;
@@ -241,7 +241,7 @@ p.content {
     margin: auto;
     margin-top: 10%;
     width: 350px;
-    height: 400px;
+    height: 322px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
@@ -268,12 +268,14 @@ p.content {
     font-family: 'Lato';
     font-size: 14px;
     margin: 0px;
+    font-weight: 700;
   }
 
   p.content {
     font-family: 'Lato';
     font-size: 10px;
     margin: 0px;
+    font-weight: 700;
   }
   .subtext {
     top: 3.5%;
