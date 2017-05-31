@@ -33,11 +33,13 @@
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
+
 .button1:hover {
     background-color: #3498db;
     color: #ffffff;
     cursor: pointer;
 }
+
 .button2 {
   position: relative;
   margin-top: 100px;
@@ -54,11 +56,13 @@
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
+
 .button2:hover {
     background-color: #2ecc71;
     color: #ffffff;
     cursor: pointer;
 }
+
 .button3 {
   position: relative;
   margin-top: 100px;
@@ -75,12 +79,12 @@
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
+
 .button3:hover {
     background-color: #e74c3c;
     color: #ffffff;
     cursor: pointer;
 }
-
 
 #main.webpage {
   position: relative;
@@ -95,8 +99,6 @@
   border-radius: 10px;
   box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
 }
-
-
 
 /* Projects Page */
 #projects.webpage {
@@ -113,6 +115,7 @@
   border-radius: 10px;
   box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
 }
+
  a.projects:link, a.projects:visited {
     color: white;
     border-bottom: 1px solid #3498db;
@@ -121,11 +124,11 @@
     text-decoration: none;
     display: inline-block;
 }
+
 a.projects:hover, a.projects:active {
     background-color: #3498db;
     color: white;
 }
-
 
 /* Research Page */
 #research.webpage {
@@ -142,6 +145,7 @@ a.projects:hover, a.projects:active {
   border-radius: 10px;
   box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
 }
+
 a.research:link, a.research:visited {
    color: white;
    border-bottom: 1px solid #2ECC71;
@@ -150,11 +154,11 @@ a.research:link, a.research:visited {
    text-decoration: none;
    display: inline-block;
 }
+
 a.research:hover, a.research:active {
    background-color: #2ECC71;
    color: white;
 }
-
 
 #about.webpage {
   position: relative;
@@ -170,6 +174,7 @@ a.research:hover, a.research:active {
   border-radius: 10px;
   box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
 }
+
 a.about:link, a.about:visited {
    color: white;
    border-bottom: 1px solid #e74c3c;
@@ -178,6 +183,7 @@ a.about:link, a.about:visited {
    text-decoration: none;
    display: inline-block;
 }
+
 a.about:hover, a.about:active {
    background-color: #e74c3c;
    color: white;
@@ -212,11 +218,7 @@ p.content {
   margin: 0px;
 }
 
-
-
-
-
-
+/* Mobile scaling*/
 @media all and (max-width: 900px) {
   #main.webpage {
     position: relative;
@@ -227,6 +229,7 @@ p.content {
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
+
   #projects.webpage {
     position: relative;
     margin: auto;
@@ -236,6 +239,7 @@ p.content {
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
+
   #research.webpage {
     position: relative;
     margin: auto;
@@ -245,6 +249,7 @@ p.content {
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
+
   #about.webpage {
     position: relative;
     margin: auto;
@@ -254,6 +259,7 @@ p.content {
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
+
   img {
     display: inline-block;
     width: 100px;
@@ -277,6 +283,7 @@ p.content {
     margin: 0px;
     font-weight: 700;
   }
+
   .subtext {
     top: 3.5%;
     font-size: 14px;
@@ -286,6 +293,7 @@ p.content {
     top: 22.5px;
     font-size: 24px;
   }
+
   .subtext {
     top: 7%;
     font-size: 12px;
@@ -295,29 +303,15 @@ p.content {
   a{
     text-decoration: none;
   }
+
   .description {
     display: inline-block;
     width: 225px;
     height: 25px;
     margin: 10px 0px 0px 0px;
   }
+
   .button1 {
-    font-size: 16px;
-    display: block;
-    top: 40px;
-    margin: auto auto 10px auto;
-    text-align: center;
-    position: relative;
-}
-  .button2 {
-    font-size: 16px;
-    display: block;
-    top: 40px;
-    margin: auto auto 10px auto;
-    text-align: center;
-    position: relative;
-  }
-  .button3 {
     font-size: 16px;
     display: block;
     top: 40px;
@@ -326,5 +320,22 @@ p.content {
     position: relative;
   }
 
+  .button2 {
+    font-size: 16px;
+    display: block;
+    top: 40px;
+    margin: auto auto 10px auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .button3 {
+    font-size: 16px;
+    display: block;
+    top: 40px;
+    margin: auto auto 10px auto;
+    text-align: center;
+    position: relative;
+  }
 
 }
