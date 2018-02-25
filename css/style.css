@@ -87,6 +87,16 @@
 }
 
 
+.projecticons {
+color: #ffffff;
+opacity: 0.5;
+}
+.projecticons:hover {
+opacity: 1;
+border-bottom: 1px solid #3498db;
+}
+
+
 .researchicons {
 color: #ffffff;
 opacity: 0.5;
@@ -95,6 +105,8 @@ opacity: 0.5;
 opacity: 1;
 border-bottom: 1px solid #2ECC71;
 }
+
+
 
 
 #main.webpage {
