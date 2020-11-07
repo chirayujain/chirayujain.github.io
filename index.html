@@ -1,49 +1,389 @@
 <!DOCTYPE html>
-<html id="main">
-
-</div>
+<html>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1X7ZXLHFY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D1X7ZXLHFY');
-</script>
-  <meta charset="UTF-8">
-  <title>Chirayu Jain</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,700|Space+Mono:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bulma/css/bulma.css" />
   <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+  <!--load all styles -->
+</head>
 
+<body>
   <style>
     html {
+      height: 100vh;
+      width: 100vw;
+      background-color: #b2bec3;
+    }
+
+    body {
       height: 100%;
-      background-color: #D4D3D1;
+      width: 100%;
+    }
+
+    img {
+      border-radius: 5px;
+    }
+
+    .columns {
+      height: 100%;
+    }
+
+    .column.no-scroll {
+      overflow: auto;
+    }
+
+    .column.logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .projectbox {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin-top: 3vh;
+      margin-right: 15vh;
+      margin-left: 15vh;
+      margin-bottom: 3vh;
+      border-width: thick;
+      padding: 20px 20px 15px 20px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
+    }
+    @media only screen and (max-width: 768px) {
+      .projectbox {
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-top: 3vh;
+        margin-right: 5vh;
+        margin-left: 5vh;
+        margin-bottom: 3vh;
+        border-width: thick;
+        padding: 20px 20px 15px 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
+      }
+    }
+
+
+
+
+    .title {
+      font-family: 'Lato', sans-serif;
+      font-size: 2vw;
+      color: white;
+      display: table-cell;
+    }
+
+    .content {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.25vw;
+      color: white;
+      padding-top: 10px;
+    }
+
+
+
+    .name {
+      font-family: 'Rubik', sans-serif;
+      font-size: 64px;
+      color: #333333;
+      text-align: center;
+    }
+
+    .description {
+      font-family: 'Rubik', sans-serif;
+      font-size: 18px;
+      color: #333333;
+      text-align: center;
+
+    }
+
+
+
+    .is-vertical-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+
+    .alignleft {
+      float: left;
+    }
+
+    .alignright {
+      float: right;
+    }
+
+
+
+    .icons {
+      color: #ffffff;
+      opacity: 0.5;
+      padding: 5px;
+    }
+
+    .icons:hover {
+      color: #ffffff;
+      opacity: 1;
+      border-bottom: 1px solid #fab1a0;
+
+    }
+
+    a.links:link,
+    a.links:visited {
+      color: white;
+      border-bottom: 1px solid #fab1a0;
+      padding: 0px 0px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a.links:hover,
+    a.links:active {
+      background-color: #fab1a0;
     }
   </style>
 
 
-</head>
+
+  <div class="columns ">
+
+    <div class="column logo is-one-third ">
+      <div>
+        <p class="name">Chirayu Jain</p>
+        <p class="description">Electrical Engineer @Northeastern University</p>
+        <br>
+
+        <button class="button is-dark is-fullwidth">
+          <span class="icon"><i class="far fa-file"></i></span>
+          <span>RESUME</span>
+        </button>
+
+      </div>
+    </div>
 
 
-<body>
 
-  <div id="main" class="webpage">
 
-    <h1 class="title">CHIRAYU JAIN //<em>HOME</em></h1>
-    <h3 class="subtext">Engineer at Northeastern University</h3>
+    <div class="column no-scroll is-centered">
 
-    <div style="margin: 0 auto; text-align:center;">
-      <a href="Projects.html"><button class="button1">PROJECTS </button></a>
-      <a href="Research.html"><button class="button2">RESEARCH </button></a>
-      <a href="JainResume.pdf"><button class="button3">RESUME </button></a>
+
+
+
+      <div class="projectbox">
+        <article class="columns is-centered">
+
+          <div class="column is-one-third">
+            <img src="img/quadcopter.jpg" alt="">
+          </div>
+
+          <div class="column">
+            <p class="title is-size-3-mobile">One-Handed Controller</p>
+            <br>
+
+            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
+            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
+            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
+
+
+
+            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
+              platform, I highly
+              recommend
+              checking them out!</p>
+
+          </div>
+
+        </article>
+      </div>
+
+
+
+
+      <div class="projectbox">
+        <article class="columns is-centered">
+
+          <div class="column is-one-third">
+            <img src="img/quadcopter.jpg" alt="">
+          </div>
+
+          <div class="column">
+            <p class="title is-size-3-mobile">Capstone PlantPod</p>
+            <br>
+
+            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
+            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
+            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
+
+
+
+            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
+              platform, I highly
+              recommend
+              checking them out!</p>
+
+          </div>
+
+        </article>
+      </div>
+
+
+
+
+      <div class="projectbox">
+        <article class="columns is-centered">
+
+          <div class="column is-one-third">
+            <img src="img/PaintorX.jpg" alt="">
+          </div>
+
+          <div class="column">
+            <p class="title is-size-3-mobile">Paintor X</p>
+            <br>
+
+            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
+            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
+            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
+
+
+
+            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
+              platform, I highly
+              recommend
+              checking them out!</p>
+
+          </div>
+
+        </article>
+      </div>
+
+
+
+
+      <div class="projectbox">
+        <article class="columns is-centered">
+
+          <div class="column is-one-third">
+            <img src="img/Zunlimited.jpg" alt="">
+          </div>
+
+          <div class="column">
+            <p class="title is-size-3-mobile">Z - Unlimited</p>
+            <br>
+
+            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
+            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
+            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
+
+
+
+            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
+              platform, I highly
+              recommend
+              checking them out!</p>
+
+          </div>
+
+        </article>
+      </div>
+
+
+
+      <div class="projectbox">
+        <article class="columns is-centered">
+
+          <div class="column is-one-third">
+            <img src="img/cornerstone.jpg" alt="">
+          </div>
+
+          <div class="column">
+            <p class="title is-size-3-mobile">MinEnergy</p>
+            <br>
+
+            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
+            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
+            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
+
+
+
+            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
+              platform, I highly
+              recommend
+              checking them out!</p>
+
+          </div>
+
+        </article>
+      </div>
+
+
+
+      <div class="projectbox">
+        <article class="columns is-centered">
+
+          <div class="column is-one-third">
+            <img src="img/Zunlimited.jpg" alt="">
+          </div>
+
+          <div class="column">
+            <p class="title is-size-3-mobile">3D Printed LithoLamp</p>
+            <br>
+
+            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
+            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
+            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
+
+
+
+            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
+              platform, I highly
+              recommend
+              checking them out!</p>
+
+          </div>
+
+        </article>
+      </div>
+
+
+
+
+      <div class="projectbox">
+        <article class="columns is-centered">
+
+          <div class="column is-one-third">
+            <img src="img/slider.png" alt="">
+          </div>
+
+          <div class="column">
+            <p class="title is-size-3-mobile">Motorized Camera Slider</p>
+            <br>
+
+            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
+            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
+            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
+
+
+
+            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
+              platform, I highly
+              recommend
+              checking them out!</p>
+
+          </div>
+
+        </article>
+      </div>
+
+
+
 
     </div>
 
