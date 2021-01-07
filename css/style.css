@@ -1,0 +1,192 @@
+/* main Page */
+#main.webpage {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 1200px;
+  height: auto;
+  color: #ffffff;
+  background: rgba(0, 0, 0, .7);
+  opacity: 1;
+  border-radius: 10px;
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
+}
+
+.header {
+  padding-top: 40px;
+}
+
+h1.title {
+  font-family: 'Space Mono';
+  font-size: 52px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0px;
+}
+
+p.subtext {
+  font-family: 'Lato';
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0px;
+}
+
+.button1 {
+  position: relative;
+  margin-top: 100px;
+  width: 140px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 3px solid #3498db;
+  padding: 20px;
+  font-family: 'Space Mono';
+  font-size: 20px;
+  color: #3498db;
+  text-align: center;
+  display: inline-block -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  background-color: #2d3436;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.card{
+  padding: 25px;
+}
+
+img {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+.description {
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+  width: 700px;
+}
+
+p.name {
+  font-family: 'Lato';
+  font-size: 40px;
+  margin: 0px;
+}
+
+p.content {
+  font-family: 'Lato';
+  font-size: 28px;
+  margin: 0px;
+}
+
+.icons {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.icons:hover {
+  opacity: 1;
+  border-bottom: 1px solid #2d3436;
+}
+
+a.main:link, a.main:visited {
+  color: white;
+  border-bottom: 1px solid #2d3436;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.main:hover, a.main:active {
+  background-color: #2d3436;
+  color: white;
+}
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/* Mobile scaling*/
+@media all and (max-width: 900px) {
+  #main.webpage {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 350px;
+    height: auto;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .7);
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+
+  .header {
+    padding-top: 40px;
+  }
+
+  h1.title {
+    top: 20px;
+    font-size: 24px;
+  }
+
+  p.subtext {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .button1 {
+    font-size: 16px;
+    display: block;
+    top: 40px;
+    margin: auto auto 10px auto;
+    text-align: center;
+    position: relative;
+  }
+
+  img {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    vertical-align: top;
+    margin: 5px 25px 5px 25px;
+    border-radius: 2px;
+  }
+
+  p.name {
+    font-family: 'Lato';
+    font-size: 18px;
+    margin: 5px 25px 5px 25px;
+    font-weight: 700;
+  }
+
+  p.content {
+    font-family: 'Lato';
+    font-size: 12px;
+    margin: 5px 25px 5px 25px;
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .description {
+    display: inline-block;
+    width: 350px;
+  }
+}

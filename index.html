@@ -1,391 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html id="main">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="bulma/css/bulma.css" />
-  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rubik:wght@500&display=swap" rel="stylesheet">
-  <link href="fontawesome/css/all.css" rel="stylesheet">
-  <!--load all styles -->
-</head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1X7ZXLHFY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-<body>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D1X7ZXLHFY');
+  </script>
+  <meta charset="UTF-8">
+  <title>Chirayu Jain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,700|Space+Mono:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <style>
     html {
-      height: 100vh;
-      width: 100vw;
-      background-color: #b2bec3;
-    }
-
-    body {
       height: 100%;
-      width: 100%;
-    }
-
-    img {
-      border-radius: 5px;
-    }
-
-    .columns {
-      height: 100%;
-    }
-
-    .column.no-scroll {
-      overflow: auto;
-    }
-
-    .column.logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-    .projectbox {
-      background-color: rgba(0, 0, 0, 0.7);
-      margin-top: 3vh;
-      margin-right: 15vh;
-      margin-left: 15vh;
-      margin-bottom: 3vh;
-      border-width: thick;
-      padding: 20px 20px 15px 20px;
-      border-radius: 10px;
-      box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
-    }
-    @media only screen and (max-width: 768px) {
-      .projectbox {
-        background-color: rgba(0, 0, 0, 0.7);
-        margin-top: 3vh;
-        margin-right: 5vh;
-        margin-left: 5vh;
-        margin-bottom: 3vh;
-        border-width: thick;
-        padding: 20px 20px 15px 20px;
-        border-radius: 10px;
-        box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, .5);
-      }
-    }
-
-
-
-
-    .title {
-      font-family: 'Lato', sans-serif;
-      font-size: 2vw;
-      color: white;
-      display: table-cell;
-    }
-
-    .content {
-      font-family: 'Lato', sans-serif;
-      font-size: 1.25vw;
-      color: white;
-      padding-top: 10px;
-    }
-
-
-
-    .name {
-      font-family: 'Rubik', sans-serif;
-      font-size: 64px;
-      color: #333333;
-      text-align: center;
-    }
-
-    .description {
-      font-family: 'Rubik', sans-serif;
-      font-size: 18px;
-      color: #333333;
-      text-align: center;
-
-    }
-
-
-
-    .is-vertical-center {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-
-
-
-    .alignleft {
-      float: left;
-    }
-
-    .alignright {
-      float: right;
-    }
-
-
-
-    .icons {
-      color: #ffffff;
-      opacity: 0.5;
-      padding: 5px;
-    }
-
-    .icons:hover {
-      color: #ffffff;
-      opacity: 1;
-      border-bottom: 1px solid #fab1a0;
-
-    }
-
-    a.links:link,
-    a.links:visited {
-      color: white;
-      border-bottom: 1px solid #fab1a0;
-      padding: 0px 0px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    a.links:hover,
-    a.links:active {
-      background-color: #fab1a0;
+      background-color: #2d3436;
     }
   </style>
+</head>
 
 
 
-  <div class="columns is-desktop ">
+<body>
 
-    <div class="column logo is-one-third ">
-      <div>
-        <p class="name">Chirayu Jain</p>
-        <p class="description">Electrical Engineer @Northeastern University</p>
-        <br>
+  <div id="main" class="webpage">
 
-        <button class="button is-dark is-fullwidth">
-          <span class="icon"><i class="far fa-file"></i></span>
-          <span>RESUME</span>
-        </button>
+    <div class="header">
+      <h1 class="title">CHIRAYU JAIN | RESUME</h1>
+      <p class="subtext">Engineer at Northeastern University</p>
+      <br>
+      <br>
+      <h1 class="title">Projects:</h1>
+      <br>
+      <br>
+    </div>
 
+
+    <div class="card">
+      <img src="img/PaintorX.jpg">
+      <div class="description">
+        <p class="name">
+          Paintor X
+          <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image"></i></a>
+          <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code"></i></a>
+          <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube"></i></a>
+        </p>
+        <p class="content">
+          Large scale 1m x 1m 3D printer made for
+          <a class="main" href="https://en.wikipedia.org/wiki/Fabian_Marcaccio">Fabian Marcaccio</a>
+          <br>
+          <br>
+          See art made <a class="main" href="http://paintantsstudio.blogspot.com/">here</a>
+        </p>
       </div>
     </div>
 
 
 
-
-    <div class="column no-scroll is-centered">
-
-
-
-
-      <div class="projectbox">
-        <article class="columns is-centered">
-
-          <div class="column is-one-third">
-            <img src="img/quadcopter.jpg" alt="">
-          </div>
-
-          <div class="column">
-            <p class="title is-size-3-mobile">One-Handed Controller</p>
-            <br>
-
-            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
-            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
-            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
-
-
-
-            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
-              platform, I highly
-              recommend
-              checking them out!</p>
-
-          </div>
-
-        </article>
+    <div class="card">
+      <img src="img/Zunlimited.jpg">
+      <div class="description">
+        <p class="name">
+          Z Unlimited
+          <a class="icons" href="https://drive.google.com/drive/folders/1hqSY-Ydn2qF5iUQgjm0h1cXOqu8fSDM0?usp=sharing"><i class="fa fa-file-image"></i></a>
+          <a class="icons" href="https://www.youtube.com/watch?v=HByUXl1x_JI&feature=youtu.be"><i class="fab fa-youtube"></i></a>
+        </p>
+        <p class="content">
+          Ultimaker2+ mod for greater build height made at
+          <a class="main" href="https://www.fatcatfablab.org/">FatCatFabLab</a>
+        </p>
       </div>
-
-
-
-
-      <div class="projectbox">
-        <article class="columns is-centered">
-
-          <div class="column is-one-third">
-            <img src="img/quadcopter.jpg" alt="">
-          </div>
-
-          <div class="column">
-            <p class="title is-size-3-mobile">Capstone PlantPod</p>
-            <br>
-
-            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
-            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
-            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
-
-
-
-            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
-              platform, I highly
-              recommend
-              checking them out!</p>
-
-          </div>
-
-        </article>
-      </div>
-
-
-
-
-      <div class="projectbox">
-        <article class="columns is-centered">
-
-          <div class="column is-one-third">
-            <img src="img/PaintorX.jpg" alt="">
-          </div>
-
-          <div class="column">
-            <p class="title is-size-3-mobile">Paintor X</p>
-            <br>
-
-            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
-            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
-            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
-
-
-
-            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
-              platform, I highly
-              recommend
-              checking them out!</p>
-
-          </div>
-
-        </article>
-      </div>
-
-
-
-
-      <div class="projectbox">
-        <article class="columns is-centered">
-
-          <div class="column is-one-third">
-            <img src="img/Zunlimited.jpg" alt="">
-          </div>
-
-          <div class="column">
-            <p class="title is-size-3-mobile">Z - Unlimited</p>
-            <br>
-
-            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
-            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
-            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
-
-
-
-            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
-              platform, I highly
-              recommend
-              checking them out!</p>
-
-          </div>
-
-        </article>
-      </div>
-
-
-
-      <div class="projectbox">
-        <article class="columns is-centered">
-
-          <div class="column is-one-third">
-            <img src="img/cornerstone.jpg" alt="">
-          </div>
-
-          <div class="column">
-            <p class="title is-size-3-mobile">MinEnergy</p>
-            <br>
-
-            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
-            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
-            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
-
-
-
-            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
-              platform, I highly
-              recommend
-              checking them out!</p>
-
-          </div>
-
-        </article>
-      </div>
-
-
-
-      <div class="projectbox">
-        <article class="columns is-centered">
-
-          <div class="column is-one-third">
-            <img src="img/Zunlimited.jpg" alt="">
-          </div>
-
-          <div class="column">
-            <p class="title is-size-3-mobile">3D Printed LithoLamp</p>
-            <br>
-
-            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
-            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
-            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
-
-
-
-            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
-              platform, I highly
-              recommend
-              checking them out!</p>
-
-          </div>
-
-        </article>
-      </div>
-
-
-
-
-      <div class="projectbox">
-        <article class="columns is-centered">
-
-          <div class="column is-one-third">
-            <img src="img/slider.png" alt="">
-          </div>
-
-          <div class="column">
-            <p class="title is-size-3-mobile">Motorized Camera Slider</p>
-            <br>
-
-            <a class="icons" href="https://drive.google.com/open?id=1B_b4fToNdiFMdBRQPpY1Dk8REv9Qy-FS"><i class="fa fa-file-image fa-2x"></i></a>
-            <a class="icons" href="https://github.com/chirayujain/Paintor-X"><i class="fas fa-file-code fa-2x"></i></a>
-            <a class="icons" href="https://www.youtube.com/watch?v=j_qS9BIUgI0"><i class="fab fa-youtube fa-2x"></i></a>
-
-
-
-            <p class="content is-size-5-mobile">This template is based off of the official default blog template created by the fine folks over at <a class="links" href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog
-              platform, I highly
-              recommend
-              checking them out!</p>
-
-          </div>
-
-        </article>
-      </div>
-
-
-
-
     </div>
+
+
+    <div class="card">
+      <img src="img/cornerstone.jpg">
+      <div class="description">
+        <p class="name">
+          MinEnergy
+          <a class="icons" href="https://github.com/chirayujain/Alternative-Energy-Exhibit"><i class="fas fa-file-code"></i></a>
+        </p>
+        <p class="content">
+          Alternative Energy Exhibit designed to teach students at Richard J. Murphy Middle School
+          about energy efficiency.
+          icons
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/arcadecontroller.jpg">
+      <div class="description">
+        <p class="name">
+          Arcade Controller
+          <a class="icons" href="https://github.com/chirayujain/Arcade-Controller"><i class="fas fa-file-code"></i></a>
+        </p>
+        <p class="content">
+          Arcade style gamecube controller made with Arduino and the Nintendo library by <a class="main" href="https://github.com/NicoHood/Nintendo">NicoHood.</a>
+          Ergonomically designed for competitive SSBM.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/slider.png">
+      <div class="description">
+        <p class="name">
+          Smart Camera Slider
+        </p>
+        <p class="content">
+          3D printed and motorized camera slider made with Arduino. Designed to be
+          quiet and customizeable.
+
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <img src="img/carbonfiber.jpg">
+      <div class="description">
+        <p class="name"> Carbon Fiber
+          <a class="icons" href="https://cooper.edu/sites/default/files/uploads/assets/engineering/files/2016/Racecar%20Final%20Presentation_off_google_drive.pdf"><i class="fa fa-file-powerpoint"></i></a>
+          <a class="icons" href="https://www.youtube.com/watch?v=LV3qerGtVLg&feature=youtu.be"><i class="fab fa-youtube"></i></a>
+        </p>
+        <p class="content">
+          Nosecone manufacturing methods with <a class="main" href="http://fsae.cooper.edu/">Cooper Union FSAE team</a>
+          at <a class="main" href="https://cooper.edu/engineering/summer-stem">CUSTEM</a>.
+          <!--add video of presentation, link to abstract, powerpoint -->
+        </p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/enable.jpg">
+      <div class="description">
+        <p class="name"> E-NABLE
+          <a class="icons" href="https://youtu.be/R9bonixfnsM"><i class="fab fa-youtube"></i></a>
+
+        </p>
+        <p class="content">
+          Creating better education of 3D printed prosthetics with <a class="main" href="http://enablingthefuture.org/">E-NABLE</a>.
+          <br>
+          <br>
+          <a class="main" href="https://youtu.be/AO7swTWr9jU?t=8m8s">Town Hall meeting of progress</a>.
+
+        </p>
+      </div>
+    </div>
+
 
   </div>
 
