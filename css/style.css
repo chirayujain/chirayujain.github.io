@@ -163,21 +163,21 @@ a.main:hover, a.main:active {
     width: 300px;
     height: 300px;
     vertical-align: top;
-    margin: 5px 25px 5px 25px;
+    margin: 0px 0px 0px 0px;
     border-radius: 2px;
   }
 
   p.name {
     font-family: 'Lato';
     font-size: 18px;
-    margin: 5px 25px 5px 25px;
+    margin: 5px 0px 5px 0px;
     font-weight: 700;
   }
 
   p.content {
     font-family: 'Lato';
     font-size: 12px;
-    margin: 5px 25px 5px 25px;
+    margin: 5px 0px 5px 0px;
     font-weight: 700;
   }
 
@@ -187,6 +187,7 @@ a.main:hover, a.main:active {
 
   .description {
     display: inline-block;
-    width: 350px;
+    width: 300px;
+    padding: 0px 0px 0px 0px;
   }
 }
