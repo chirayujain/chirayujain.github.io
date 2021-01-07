@@ -19,7 +19,7 @@
 }
 
 h1.title {
-  font-family: 'Space Mono';
+  font-family: 'Space Mono', monospace;
   font-size: 52px;
   color: #ffffff;
   text-align: center;
@@ -27,7 +27,7 @@ h1.title {
 }
 
 p.subtext {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   color: #ffffff;
   font-size: 24px;
   font-weight: lighter;
@@ -36,25 +36,21 @@ p.subtext {
 }
 
 .button1 {
-  position: relative;
-  margin-top: 100px;
-  width: 140px;
-  background: #ffffff;
+  background: #2d3436;
   border-radius: 5px;
-  border: 3px solid #3498db;
-  padding: 20px;
-  font-family: 'Space Mono';
-  font-size: 20px;
-  color: #3498db;
+  border: 0px solid #2d3436;
+  font-family: 'Space Mono', monospace;
+  font-size: 40px;
+  color: #ffffff;
   text-align: center;
+
   display: inline-block -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.4s;
 }
 
 .button1:hover {
-  background-color: #2d3436;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #2d3436;
   cursor: pointer;
 }
 
@@ -77,15 +73,16 @@ img {
 }
 
 p.name {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-size: 40px;
   margin: 0px;
 }
 
 p.content {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-size: 28px;
   margin: 0px;
+  font-weight: 300;
 }
 
 .icons {
@@ -112,6 +109,12 @@ a.main:hover, a.main:active {
   color: white;
 }
 
+hr{
+  width: 96%;
+  line-height:0;
+  border:1px solid #2d3436;
+}
+
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
@@ -123,7 +126,7 @@ a.main:hover, a.main:active {
     margin: auto;
     display: block;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     width: 350px;
     height: auto;
     color: #ffffff;
@@ -140,7 +143,7 @@ a.main:hover, a.main:active {
   }
 
   h1.title {
-    top: 20px;
+    top: 40px;
     font-size: 24px;
   }
 
@@ -150,16 +153,16 @@ a.main:hover, a.main:active {
   }
 
   .button1 {
-    font-size: 16px;
-    display: block;
+    font-size: 18px;
+    display: inline-block;
     top: 40px;
     margin: auto auto 10px auto;
     text-align: center;
-    position: relative;
+    position: center;
   }
 
   img {
-    display: inline-block;
+    display: inline-flex;
     width: 300px;
     height: 300px;
     vertical-align: top;
@@ -168,17 +171,17 @@ a.main:hover, a.main:active {
   }
 
   p.name {
-    font-family: 'Lato';
-    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
     margin: 5px 0px 5px 0px;
     font-weight: 700;
   }
 
   p.content {
-    font-family: 'Lato';
-    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
     margin: 5px 0px 5px 0px;
-    font-weight: 700;
+    font-weight: lighter;
   }
 
   a {
@@ -189,5 +192,11 @@ a.main:hover, a.main:active {
     display: inline-block;
     width: 300px;
     padding: 0px 0px 0px 0px;
+  }
+
+  hr{
+    width: 86%;
+    line-height:0;
+    border:1px solid #2d3436;
   }
 }
